@@ -1,0 +1,289 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+#container {
+  width: 100%;
+  margin: auto;
+}
+
+header {
+  position: relative;
+  background-color: #033048;
+  width: 100%;
+  height: 130px;
+}
+
+.logo {
+  position: absolute;
+  margin-left: 5%;
+  margin-top: 30px;
+  width: 115px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.navigation {
+  position: absolute;
+  margin-left: 65%;
+  margin-top: 45px;
+  width: 400px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.navigation li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.navigation a {
+  color: #f9e42e;
+  text-decoration: none;
+}
+
+section {
+  width: 100%;
+  overflow: hidden;
+  margin: auto;
+  background-color: #D7D7D7;
+}
+
+.maincontent {
+  float: left;
+  width: 65%;
+  height: 1500px;
+  background-color: #D7D7D7;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 5%;
+}
+
+.maincontent h2 {
+  width: 700px;
+  color: #043049;
+  font-size: 24px;
+  font-weight: 600;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.maincontent img {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.maincontent p {
+  width: 700px;
+  padding-bottom: 30px;
+}
+
+.maincontent a {
+  color: #043049;
+  text-decoration: none;
+}
+
+.readmore {
+  padding-left: 580px;
+  width: 700px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.readagain {
+  padding-left: 580px;
+  width: 700px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.readless {
+  padding-left: 580px;
+  width: 700px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.lessread {
+  padding-left: 580px;
+  width: 700px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+.side {
+  float: left;
+  height: 1500px;
+  width: 35%;
+  background-color: #D7D7D7;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 3% 0;
+}
+
+.side h3 {
+  color: #043049;
+  font-size: 24px;
+  font-weight: 800;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.side li {
+  font-size: 18px;
+  color: #043049;
+  padding: 10px 0;
+}
+
+.side p {
+  width: 300px;
+}
+
+.side a {
+  color: #043049;
+  text-decoration: none;
+}
+
+.learnmore {
+  font-weight: 600;
+}
+
+.cta {
+  position: relative;
+  height: 130px;
+  background-color: #f9e42e;
+  clear: both;
+}
+
+.button {
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 45px;
+  font-size: 20px;
+  font-weight: 800;
+  background-color: #033048;
+  height: 50px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 11px 32px;
+}
+
+.button a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+  background-color: #2F2F2F;
+  width: 100%;
+  height: 400px;
+}
+
+.logobottom {
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 70px;
+  height: 50px;
+  width: 200px;
+  padding: 11px 32px;
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.logobottom a {
+  color: #f9e42e;
+  text-decoration: none;
+}
+
+.social {
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 130px;
+  padding: 30px 50px;
+}
+
+.credits {
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 230px;
+  padding: 11px 32px;
+  font-size: 9px;
+  font-weight: 600;
+  color: white;
+}
+
+.hide {
+  display: none;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

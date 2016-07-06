@@ -1,0 +1,31 @@
+$(document).ready(function() {
+  $('.readmore').click(function(){
+    $('#show').slideDown();
+    $('.readmore').hide();
+    $('.readless').show();
+    event.preventDefault();
+  });
+  $('.readless').click(function(){
+    $('#show').slideUp();
+    $('.readless').hide();
+    $('.readmore').show();
+    event.preventDefault();
+  });
+  $('.readagain').click(function(){
+    $('#showmore').slideDown();
+    $('.readagain').hide();
+    $('.lessread').show();
+    event.preventDefault();
+  });
+  $('.lessread').click(function(){
+    $('#showmore').slideUp();
+    $('.lessread').hide();
+    $('.readagain').show();
+    event.preventDefault();
+  });
+  $('.learnmore').click(function(){
+    $('#moretext').slideDown();
+    event.preventDefault();
+  });
+
+});
